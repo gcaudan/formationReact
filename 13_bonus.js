@@ -26,6 +26,10 @@ ex: la pomme est rouge et la banane est jaune
 
 const countWords = (sentence) => {
   return sentence.split(' ').reduce((acc, i) => i)
+  return sentence.split('').reduce((acc, i) => {
+    acc[i] = (acc[i] || 0) + 1;
+    return acc;
+}, {});
 };
 console.log(countWords("la pomme est rouge et la banane est jaune"));
 

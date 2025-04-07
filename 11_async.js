@@ -50,7 +50,7 @@ const axios = require("axios");
 
 const apiResponse = async (url) => await axios.get(url).then(res => res.data)
 
-// apiResponse("https://jsonplaceholder.typicode.com/todos/1")
+apiResponse("https://jsonplaceholder.typicode.com/todos/1")
 
 
 module.exports = {usingThen, usingAwait, apiResponse};
