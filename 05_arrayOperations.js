@@ -10,7 +10,7 @@
  * 
   */
 
-const multiplyByTwo = (array) => array.map(a => a*2) 
+const multiplyByTwo = array => array.map(a => a*2) 
 
 
 console.log(multiplyByTwo([1,2,3,4,5]))
@@ -25,7 +25,7 @@ console.log(multiplyByTwo([1,2,3,4,5]))
  *   - Vous ne pouvez pas utiliser de variable (autre que l'argument de la fonction)
   */
 
-const filterNameStartByA = (array) => array.filter(a => a[0] ==="A")
+const filterNameStartByA = array => array.filter(a => a[0] ==="A")
 
 console.log(filterNameStartByA(["ghj","Aze","abc","","Aui"]))
 
@@ -39,7 +39,7 @@ console.log(filterNameStartByA(["ghj","Aze","abc","","Aui"]))
  *   - Vous ne pouvez pas utiliser de variable (autre que l'argument de la fonction)
   */
 
-const sum = (array) => array.reduce((a,b) => a+b, 0)
+const sum = array => array.reduce((a,b) => a+b, 0)
 
 console.log(sum([1,2,3,4,5]))
 console.log(sum([]))
