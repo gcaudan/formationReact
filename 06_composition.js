@@ -10,7 +10,7 @@
 
 const concat = (arr1, arr2) => [...arr1, ...arr2]
 
-console.log(concat([1, 2, 3], [4, 5, 6]))
+// console.log(concat([1, 2, 3], [4, 5, 6]))
 
 /**
  * utiliser l'opérateur de composition ... afin d'ajouter un élément à un tableau
@@ -23,7 +23,7 @@ console.log(concat([1, 2, 3], [4, 5, 6]))
 
 const push = (arr, item) => [...arr, item]
 
-console.log(push([1, 2, 3], 4))
+// console.log(push([1, 2, 3], 4))
 
 /**
  * utiliser l'opérateur de composition ... afin de fusionner 2 objets passés en paramètres
@@ -33,7 +33,7 @@ console.log(push([1, 2, 3], 4))
 
 const merge = (obj1, obj2) => ({...obj1, ...obj2})
     
-console.log(merge({a: 1, b: 2}, {c: 3, d: 4}))
+// console.log(merge({a: 1, b: 2}, {c: 3, d: 4}))
 
 /**
  * utiliser l'opérateur de composition ... afin de modifier la propriété name de l'objet
@@ -46,7 +46,7 @@ console.log(merge({a: 1, b: 2}, {c: 3, d: 4}))
 
 const setName = (obj, name) => ({...obj, name})
 
-console.log(setName({name: 'toto'}, 'titi'))
+// console.log(setName({name: 'toto'}, 'titi'))
 
 // astuce: {...obj} crée une copie de l'objet, c'est un des principes de l'immutabilité et évite les problèmes de référence
 module.exports = {concat, push, merge, setName}

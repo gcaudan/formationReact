@@ -9,7 +9,7 @@
 
 let arrow1 = a => {return a+1}
 
-console.log(arrow1(1))
+// console.log(arrow1(1))
 
 /**
  * Déclarer une fonction fléchée qui renvoi l'argument + 1
@@ -22,6 +22,6 @@ console.log(arrow1(1))
 
 let arrow2 = a => a+1
 
-console.log(arrow2(1))
+// console.log(arrow2(1))
 
 module.exports = {arrow1, arrow2};
