@@ -1,6 +1,4 @@
-// const {sleep} = require("../exercices/10_promise");
-
-const sleep = (ms) => new Promise((resolve) => setTimeout(resolve,ms))
+const {sleep} = require("./10_promise");
 
 /**
  * Créez une fonction synchrone qui attend 2 seconde puis execute le callback passé en paramètre
@@ -13,7 +11,7 @@ const sleep = (ms) => new Promise((resolve) => setTimeout(resolve,ms))
  *    - ne pas utiliser async await
  * 
  */
-const usingThen = (cb) => new Promise(() => sleep(2000).then(cb))
+const usingThen = (cb) => new Promise(() => sleep().then(cb))
 
 // usingThen(()=>console.log(1))
 
@@ -29,7 +27,7 @@ const usingThen = (cb) => new Promise(() => sleep(2000).then(cb))
  */
 
 const usingAwait = async (cb) => {
-    await sleep(2000)
+    await sleep()
     cb()
 }
 
