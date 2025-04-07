@@ -13,7 +13,7 @@ function gettingStarted() {
 /**
  * Comment me tester ? 
  */
-console.log(gettingStarted());
+// console.log(gettingStarted());
 //$> node ./gettingStarted.js
 
 

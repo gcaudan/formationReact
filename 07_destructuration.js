@@ -12,9 +12,7 @@
  *  - interdiction d'utiliser slice ou splice
  */
 
-const extractFirstTwo = ([a, b, ...rest]) => [a, b]
-
-// console.log(extractFirstTwo([1, 2, 3]))
+const extractFirstTwo = ([a, b]) => [a, b]
 
 /**
  * utilisez la décomposition pour extraire la premiere case du tableau et le reste du tableau
@@ -23,7 +21,7 @@ const extractFirstTwo = ([a, b, ...rest]) => [a, b]
  * exemple: [1, 2, 3] => [2, 3]
  */
 
-const extractRest = ([a, ...rest]) => rest
+const extractRest = ([_, ...rest]) => rest
 
 // console.log(extractRest([1, 2, 3]))
 
