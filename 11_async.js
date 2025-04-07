@@ -11,7 +11,7 @@ const {sleep} = require("./10_promise");
  *    - ne pas utiliser async await
  * 
  */
-const usingThen = (cb) => new Promise(() => sleep().then(cb))
+const usingThen = (cb) => sleep().then(cb)
 
 // usingThen(()=>console.log(1))
 
@@ -48,7 +48,13 @@ const usingAwait = async (cb) => {
 //décommentez la ligne suivante une fois le package installé
 const axios = require("axios");
 
-const apiResponse = async (url) => await axios.get(url).then(res => res.data)
+const apiResponse = async (url) => {
+    try {
+        return (await axios.get(url)).data
+    } catch (e) {
+        console.log(e)
+    }
+}
 
 apiResponse("https://jsonplaceholder.typicode.com/todos/1")
 
